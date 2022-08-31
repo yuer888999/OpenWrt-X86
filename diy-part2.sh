@@ -12,3 +12,5 @@
 
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.8.8/g' package/base-files/files/bin/config_generate
+
+sed -i "s/OpenWrt /jade compiled in $(TZ=UTC-8 date "+%Y.%m.%d") @ OpenWrt /g" $ZZZ
